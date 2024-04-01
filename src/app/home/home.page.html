@@ -1,20 +1,29 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
+  <ion-toolbar mode="md">
+    <ion-title color="danger" size="large">
+      Gandhi
     </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="ellipsis-horizontal-outline"></ion-icon>
+      </ion-button>
+      <ion-button color="dark" expand="block" fill="solid" shape="round">
+        <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        logOut
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <!-- <ion-button  (click)="open()">Open</ion-button>
+    <ion-action-sheet trigger="open-action-sheet" header="Confirmation de suppression" [buttons]="actionSheetButtons"></ion-action-sheet> -->
+    <ion-button  (click)="accueil()">Allez vers l'accueil</ion-button>
+    <!-- <ion-alert trigger="present-alert" header="Message d'alerte " subHeader="A Sub Header Is Optional"
+      message="A message should be a short, complete sentence." [buttons]="alertButtons"></ion-alert> -->
   </div>
 </ion-content>
